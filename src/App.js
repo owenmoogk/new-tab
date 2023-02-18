@@ -53,8 +53,7 @@ function App() {
         if (!url.match(/^http?:\/\//i) || !url.match(/^https?:\/\//i)) {
           url = 'http://' + url;
         }
-
-        window.location.replace(url)
+        window.location.href = url
         return
       }
 
