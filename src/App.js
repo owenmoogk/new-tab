@@ -41,7 +41,24 @@ function App() {
 
   function handleKeyDown(event){
     if (event.key === 'Enter' || event.key === "NumpadEnter"){
-      let search = encodeURIComponent(inputValue)
+
+      // https://www.regextester.com/93652
+      let regex = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/
+      let url = inputValue
+
+      if (regex.test(url)) {
+
+        // https://stackoverflow.com/questions/12214206/location-href-to-a-link-without-http
+        // don't know regex :/
+        if (!url.match(/^http?:\/\//i) || !url.match(/^https?:\/\//i)) {
+          url = 'http://' + url;
+        }
+
+        window.location.replace(url)
+        return
+      }
+
+      let search = encodeURIComponent(url)
       window.location.href = "https://google.com/search?q="+search;
     }
   }
