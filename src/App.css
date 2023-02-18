@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+
+html{
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(50,54,57);
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root{
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#searchBar{
+  height: 30px;
+  font-size: 20px;
+  width: 500px;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+h1{
+  color: white;
+  font-size: 40px;
+}
+
+#shortcuts{
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 30px;
+  height: 30px;
+}
+
+* {
+	font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+	letter-spacing: 0px;
+}
+
+.shortcut{
+  background-color: rgb(71, 71, 71);
+  padding: 20px;
+  border-radius: 20px;
+  height: 50px;
+  margin: 20px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.shortcut:hover{
+  background-color: grey;
+}
+
+
+
+/* modal */
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(71, 71, 71);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 400px; /* Could be more or less, depending on screen size */
+  border-radius: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h3{
+  margin: 0;
+}
+
+#urlInput{
+  background-color: grey;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  height: 30px;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  
+}
+
+#urlInput:focus{
+  border-bottom: 2px solid skyblue;
+}
+
+#urlInput::placeholder{
+  color: lightgrey;
+}
+
+button{
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: grey;
+}
+
+#saveButton{
+  background-color: rgb(97, 181, 214);
+}
+
+a{
+  text-decoration: none !important;
+}
+
+#modifyButton{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 25px;
+  width: 25px;
+
+}
+
+#modifyButton:hover{
+  cursor: pointer;
+}
+
+.number{
+  text-align: center;
+  width: 100%;
+  margin-top: 5px;
 }
