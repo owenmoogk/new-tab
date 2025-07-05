@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+# new-tab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This page was meant as a catch-all for opening a new tab, it would be an easily accessible place for bookmarks and also offer a flexible search bar that could go to different pages depending on user input (shortcuts). However, I like using chrome's omnibox (search bar) for lots of things, it has an autocomplete that pulls from both history and bookmarks, something that a website just can't do.
 
-## Available Scripts
+I wanted the new tab to focus directly onto the text box, to allow for typing immediately. However, it was a little bit slow (sometimes page load could take a second and miss the first few keystrokes). Also, it didn't have the same autofill capabilities that chrome has.
 
-In the project directory, you can run:
+I considered making it in the omnibox, and then having to tab into the page, however, it would require clicking tab twice to get past the chrome bookmarks bar. It wasn't a good solution. If I was going to use this it had to be super streamlined, and this wasn't it.
 
-### `npm start`
+I think I got the wrong architecture for this. When I discovered you could make a new tab load any url, I thought it would be a great opportunity. But I think a chrome extensions is a much better idea.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I am now using Google's ' site search', which works pretty well. I can come up with shortcuts to quickly go to a site, and I like this a lot. (check it out at `chrome://settings/searchEngines`).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Maybe I'll make a chrome extension for this, but no plans as of yet.
